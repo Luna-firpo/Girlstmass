@@ -63,7 +63,7 @@ int main() {
     vector<int> numeros;
     vector<int> resultado;
     string linea;
-    ifstream fichero("fichero_dia9.txt");
+    ifstream fichero("input.txt");
 
     if (!fichero.is_open()) {
         cout << "No se pudo abrir el archivo.\n";
