@@ -57,7 +57,7 @@ int predecirRutaGuardia(const vector<string>& mapa) {
 
     // Simular el movimiento del guardia
     while (true) {
-        // Calcular la siguiente posición según la dirección actual
+        // Calcular la siguiente posición a partir de la dirección actual
         int nuevaFila = filaGuardia + movimientos[indiceDireccion].fila;
         int nuevaColumna = columnaGuardia + movimientos[indiceDireccion].columna;
 
@@ -68,7 +68,7 @@ int predecirRutaGuardia(const vector<string>& mapa) {
 
         // Verificar si hay un obstáculo al frente
         if (mapa[nuevaFila][nuevaColumna] == '#') {
-            // Girar a la derecha (90 grados)
+            // Girar a la derecha
             indiceDireccion = (indiceDireccion + 1) % 4;
         } else {
             // Avanzar
@@ -84,12 +84,12 @@ int predecirRutaGuardia(const vector<string>& mapa) {
 
 int main() {
     // Ejemplo de entrada
-    ifstream entrada("ejemplo6.txt");
+    ifstream entrada("input.txt");
     vector<string> mapa;
     string linea;
     
     if (!entrada.is_open()) {
-        cout << "No se pudo abrir el archivo ejemplo6.txt\n";
+        cout << "No se pudo abrir el archivo\n";
         return 1;
     }
 
