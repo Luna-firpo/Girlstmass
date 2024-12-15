@@ -1,3 +1,6 @@
+/* Advent Of Code Día 2 
+    Parte 2 */
+
 #include <iostream>
 #include <fstream>   // Para manejar archivos
 #include <sstream>   // Para procesar lineas
