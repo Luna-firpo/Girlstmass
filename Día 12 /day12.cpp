@@ -34,7 +34,7 @@ void procesar_region(const vector<string>& mapa, int i, int j, vector<vector<boo
 }
 
 int main() {
-    ifstream fichero("fichero_dia12.txt");
+    ifstream fichero("input.txt");
     if (!fichero) {
         cout << "No se puede abrir el archivo\n";
         return 0;
