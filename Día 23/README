@@ -1,0 +1,5 @@
+El problema trata sobre un mapa de red de computadoras donde cada línea representa una conexión entre dos computadoras. El objetivo principal es identificar: 
+-Todas las tripletas de computadoras que están conectadas mutuamente (es decir, forman un triángulo en el grafo). 
+-Cuántas de estas tripletas contienen al menos una computadora cuyo nombre comienza con la letra 't'. 
+
+Este problema se puede resolver mediante una combinación de mapas (usando una matriz de adyacencia) y programación dinámica para optimizar la detección de triángulos. 
