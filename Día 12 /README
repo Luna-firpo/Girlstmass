@@ -1,1 +1,3 @@
-
+El problema del día 12 trataba de sumar el perímetro (veces que aparece cada letra) con el área ( líneas que rodean el conjunto con las mismas letras).
+Las técnicas algorítmicas utilizadas en este problema ha sido recursividad e implícitamente grafos. A la hora de ver si habían letras vecinas alrededor de una, necesitábamos utilizar recursividad.
+Y grafos no se ha usado la función como tal, pero la exploración en una región se puede entender como un problema de búsqueda en un grafo.
