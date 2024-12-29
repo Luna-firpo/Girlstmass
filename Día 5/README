@@ -1,0 +1,6 @@
+El problema de este día consiste en ordenar ciertas páginas de acuerdo con un orden específico. Se nos proporcionan dos tipos de datos: 
+Datos con |: Estos datos indican el orden relativo entre dos páginas.
+Datos con ,: Estos datos representan distintas formas en las que se han ordenado las páginas. 
+
+El problema se puede resolver utilizando un grafo, ya que es necesario modelar las relaciones entre los números (páginas) como conexiones dirigidas. 
+Luego, verificamos si un vector dado respeta las relaciones del grafo para determinar si su orden es correcto. 
