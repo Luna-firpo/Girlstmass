@@ -1,12 +1,12 @@
 # Girlstmass
 
 *Técnicas y estructuras de datos empleadas:*
-->DyV:....
-->PD: 23
-->Tabla Hash:....
-->Árboles: 7
-->Grafos: 5, 10, 12, 23
-->¿Recursividad?: 12
+-DyV:....
+-PD: 23
+-Tabla Hash:....
+-Árboles: 7
+-Grafos: 5, 10, 12, 23
+-¿Recursividad?: 12
 
 *Puntos que se piden de cada problema:*
 1) Justificación de porqué se han elegido los problemas
