@@ -2,7 +2,7 @@
 
 *Técnicas y estructuras de datos empleadas:*
 1) DyV
-2) PD: 23
+2) PD: 19, 23
 3) Tablas Hash:
 4) Árboles: 7
 5) Grafos: 5, 10, 12, 23
