@@ -1,4 +1,4 @@
-/* Día 1 Advent Of Code 
+/* Día 1 Advent Of Code Parte 1
 Suma de las diferencias entre dos listas ordenadas
 Empleando la estrategia Divide y Venceras */
 
