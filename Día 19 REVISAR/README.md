@@ -1,17 +1,16 @@
 DÍA 19 ADVENT OF CODE PARTE 1
 
-📌 Justificación de la elección del problema
+Justificación de la elección del problema
+
 Este problema fue seleccionado porque representa un desafío típico de programación dinámica y búsqueda de cadenas dentro de un conjunto predefinido. Requiere procesar eficientemente una gran cantidad de combinaciones posibles de patrones, lo que lo convierte en un problema interesante en términos de optimización.
 
-🛠 Explicación de la solución
-El objetivo es determinar cuántos diseños pueden formarse usando una cantidad ilimitada de toallas con patrones específicos. La solución se basa en verificar si una determinada secuencia de colores puede segmentarse en subcadenas pertenecientes al conjunto de patrones disponibles.
-
-Para lograrlo, se sigue el siguiente enfoque:
+Explicación de la solución
 
 Leer los patrones disponibles y almacenarlos en un unordered_set para búsquedas rápidas.
 Leer los diseños deseados y comprobar si pueden construirse utilizando los patrones disponibles.
 Usar programación dinámica (dp[i]) para verificar si es posible formar cada prefijo del diseño usando los patrones disponibles.
-🧠 Técnicas utilizadas
+
+Técnicas utilizadas
 Programación Dinámica
 
 Se usa un enfoque de segmentación de cadenas (word break problem).
