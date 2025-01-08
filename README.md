@@ -3,7 +3,7 @@
 *Técnicas y estructuras de datos empleadas:*
 1) DyV: 1
 2) PD: 19, 23
-3) Tablas Hash:
+3) Tablas Hash: 5?
 4) Árboles: 7
 5) Grafos: 5, 10, 12, 23
 6) ¿Recursividad?: 12
