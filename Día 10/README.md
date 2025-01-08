@@ -7,16 +7,21 @@ oportunidad para practicar Búsqueda en Profundidad (DFS) y reforzar conceptos d
 Además, es un reto encontrar todos los caminos válidos de manera óptima.
 
 Explicación de cómo se ha resuelto el problema
-- Leer el mapa topográfico desde un archivo (input.txt): Se guarda la información en una matriz (grid), donde cada celda contiene un número
+1. Leer el mapa topográfico desde un archivo (input.txt):
+    - Se guarda la información en una matriz (grid), donde cada celda contiene un número
   del 0 al 9.
-- Identificar los "trailheads": Se recorren todas las posiciones de la matriz en busca de celdas con el valor 0, ya que estas son los puntos
+2. Identificar los "trailheads":
+    - Se recorren todas las posiciones de la matriz en busca de celdas con el valor 0, ya que estas son los puntos
   de inicio de los caminos.
-- Explorar caminos desde cada "trailhead": Se usa una función recursiva "explore" que: realiza un DFS para seguir caminos que aumentan de 1
-  en 1. Detiene la búsqueda cuando encuentra una celda con valor 9, añadiéndola a un conjunto (reachable_nines). Evita visitar la misma celda
-  dos veces con una matriz "visited".
-- Sumar el número de 9 alcanzables desde cada trailhead: Se usa la función "total_sum" para contar cuántos 9 puede alcanzar cada trailhead sin
-- romper las reglas del problema.
-- Sumar todas las puntuaciones: Se suma la cantidad de 9 alcanzados por cada trailhead y se imprime el resultado final.
+3. Explorar caminos desde cada "trailhead":
+    - Se usa una función recursiva "explore" que: realiza un DFS para seguir caminos que aumentan de 1
+    en 1.
+    - Detiene la búsqueda cuando encuentra una celda con valor 9, añadiéndola a un conjunto (reachable_nines).
+    - Evita visitar la misma celda dos veces con una matriz "visited".
+4. Sumar el número de 9 alcanzables desde cada trailhead:
+    - Se usa la función "total_sum" para contar cuántos 9 puede alcanzar cada trailhead sin romper las reglas del problema.
+5. Sumar todas las puntuaciones:
+    - Se suma la cantidad de 9 alcanzados por cada trailhead y se imprime el resultado final.
 
 Técnicas que se han utilizado
 - Búsqueda en Profundidad (DFS): Se ha implementado una exploración recursiva para recorrer caminos válidos en la cuadrícula.
