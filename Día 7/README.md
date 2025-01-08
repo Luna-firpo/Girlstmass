@@ -12,15 +12,15 @@ Explicación de resoludión del problema
       - "nums": los números después del :.
     
 2. Evaluar todas las combinaciones posibles de operadores
-- Se implementa una función recursiva evaluate_tree que explora todas las combinaciones de + y * entre los números de nums.
-- La evaluación de la expresión se realiza estrictamente de izquierda a derecha.
+    - Se implementa una función recursiva evaluate_tree que explora todas las combinaciones de + y * entre los números de nums.
+    - La evaluación de la expresión se realiza estrictamente de izquierda a derecha.
   
 3. Comprobación de validez
-- Si al final de la exploración se obtiene "target", la ecuación es válida.
-- Se suma "target" al resultado final si la ecuación es válida.
+    - Si al final de la exploración se obtiene "target", la ecuación es válida.
+    - Se suma "target" al resultado final si la ecuación es válida.
   
 4. Impresión del resultado total
-- Se imprime la suma de todos los valores objetivos (target) de las ecuaciones que pueden ser verificadas correctamente.
+    - Se imprime la suma de todos los valores objetivos (target) de las ecuaciones que pueden ser verificadas correctamente.
 
 Técnicas que se han utilizado
 - Backtracking (árbol de decisiones): Se usa recursión para probar todas las combinaciones posibles de operadores en cada ecuación.
