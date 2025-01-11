@@ -32,14 +32,14 @@ Explicación de la solución al problema
   Este número binario se convierte a su equivalente decimal y se muestra como resultado.
 
 Técnicas utilizadas
-    - Tablas Hash: El uso de tablas hash (específicamente con unordered_map) permite almacenar los 
+  - Tablas Hash: El uso de tablas hash (específicamente con unordered_map) permite almacenar los 
 	resultados de las puertas lógicas y los valores de los cables de forma eficiente. Esto elimina la 
 	necesidad de recalcular valores ya obtenidos, mejorando el rendimiento en simulaciones de sistemas 
 	grandes y complejos.
-    - Recursión: Se utiliza recursión para evaluar las puertas lógicas en el orden correcto, lo que
+  - Recursión: Se utiliza recursión para evaluar las puertas lógicas en el orden correcto, lo que
 	facilita el cálculo de los valores de cada cable sin tener que iterar sobre todos los cables de 
 	manera redundante.
-    - Operaciones Booleanas: Las puertas lógicas (AND, OR, XOR) se implementan como funciones lambda, 
+  - Operaciones Booleanas: Las puertas lógicas (AND, OR, XOR) se implementan como funciones lambda, 
 	integrándose de manera limpia y eficiente dentro del algoritmo.
 
 Desafíos enfrentados
