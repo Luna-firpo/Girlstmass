@@ -1,7 +1,8 @@
 # Girlstmass
+Luna Firpo Gómez, María Rodríguez Hernández, Nerea Valero Alegre
 
 *Técnicas y estructuras de datos empleadas:*
-1) DyV: 1
+1) DyV: 1, ¿¿13??
 2) PD: 19, 23
 3) Tablas Hash: 5, 24
 4) Árboles: 7
