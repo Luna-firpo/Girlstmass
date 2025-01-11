@@ -6,7 +6,7 @@ Luna Firpo, María Rodríguez, Nerea Valero
 2) PD: 19(x), 23
 3) Tablas Hash: 5, 24(x)
 4) Árboles: 7
-5) Grafos: 5, 10 (x), 12, 23
+5) Grafos: 5, 10 (x), 12(x), 23
 
 *Puntos que se piden de cada problema:*
 1) Justificación de porqué se han elegido los problemas
