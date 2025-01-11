@@ -14,27 +14,27 @@ string trim(const string& str) {
 }
 
 // Función que determina si se puede mostrar un diseño usando los patrones disponibles
-bool can_display_design(const string& design, const unordered_set<string>& patterns) {
-    vector<bool> dp(design.length() + 1, false);
+bool can_display_design(const string& diseño, const unordered_set<string>& patrones) {
+    vector<bool> dp(diseño.length() + 1, false);
     dp[0] = true;
 
-    for (size_t i = 1; i <= design.length(); ++i) {
-        for (const auto& pattern : patterns) {
-            if (i >= pattern.length() && dp[i - pattern.length()] && design.substr(i - pattern.length(), pattern.length()) == pattern) {
+    for (size_t i = 1; i <= diseño.length(); ++i) {
+        for (const auto& pat : patrones) {
+            if (i >= pat.length() && dp[i - pat.length()] && diseño.substr(i - pat.length(), pat.length()) == pat) {
                 dp[i] = true;
                 break;
             }
         }
     }
 
-    return dp[design.length()];
+    return dp[diseño.length()];
 }
 
 // Función para procesar un fragmento del archivo
-void process_fragment(const vector<string>& fragment, const unordered_set<string>& patterns, int& possible_designs) {
-    for (const auto& line : fragment) {
-        if (can_display_design(line, patterns)) {
-            ++possible_designs;
+void fragmento(const vector<string>& frag, const unordered_set<string>& patron, int& posible_disenyo) {
+    for (const auto& linea : frag) {
+        if (can_display_design(linea, patron)) {
+            posible_disenyo++;
         }
     }
 }
@@ -42,46 +42,46 @@ void process_fragment(const vector<string>& fragment, const unordered_set<string
 int main() {
     ifstream file("input.txt");
     if (!file.is_open()) {
-        cerr << "No se pudo abrir el archivo." << endl;
+        cerr << "No se puede abrir el archivo." << endl;
         return 1;
     }
 
-    string line;
-    unordered_set<string> patterns;
+    string linea;
+    unordered_set<string> patrones;
 
     // Leer los patrones disponibles
-    if (getline(file, line)) {
-        stringstream ss(trim(line));
-        string pattern;
-        while (getline(ss, pattern, ',')) {
-            patterns.insert(trim(pattern));
+    if (getline(file, linea)) {
+        stringstream ss(trim(linea));
+        string patr;
+        while (getline(ss, patr, ',')) {
+            patrones.insert(trim(patr));
         }
     }
 
-    int possible_designs = 0;
+    int pos_disenyo = 0;
     vector<string> fragment;
     const size_t FRAGMENT_SIZE = 1000;
 
     // Leer y procesar las líneas del archivo
-    while (getline(file, line)) {
-        line = trim(line);
-        if (!line.empty()) {
-            fragment.push_back(line);
+    while (getline(file, linea)) {
+        linea = trim(linea);
+        if (!linea.empty()) {
+            fragment.push_back(linea);
         }
 
         if (fragment.size() >= FRAGMENT_SIZE) {
-            process_fragment(fragment, patterns, possible_designs);
+            fragmento(fragment, patrones, pos_disenyo);
             fragment.clear();
         }
     }
 
     // Procesar cualquier línea restante
     if (!fragment.empty()) {
-        process_fragment(fragment, patterns, possible_designs);
+        fragmento(fragment, patrones, pos_disenyo);
     }
 
     file.close();
-    cout << "Número de diseños posibles: " << possible_designs << endl;
+    cout << "Número de diseños posibles: " << pos_disenyo << endl;
 
     return 0;
 }
