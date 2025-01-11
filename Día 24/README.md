@@ -43,24 +43,28 @@ Técnicas utilizadas
 	integrándose de manera limpia y eficiente dentro del algoritmo.
 
 Desafíos enfrentados
+
 Uno de los principales problemas fue gestionar las dependencias entre cables, específicamente cuando 
 algunos cables dependían de otros que aún no tenían un valor calculado. Sin embargo, al utilizar tablas
 hash,este problema se resolvió eficazmente, ya que los resultados intermedios se almacenaron y 
 reutilizaron. Y otro problema fue a la hora de leer el fichero para guardar los valores que leía.
 
 Soluciones aplicadas
+
 El uso de tablas hash no solo solucionó el problema de dependencias entre cables, sino que también
 mejoró la eficiencia al evitar cálculos innecesarios. Esto permitió que el código pudiera manejar 
 fácilmente las combinaciones de puertas lógicas más complejas y realizar la evaluación en un tiempo 
 mucho menor.
 
 Alternativas
+
 - Uso de fuerza bruta: en vez de usar recursividad, se probarían todas las opciones, aunque su coste
 sería mucho mayor.
 - Uso de grafos: se podría modelar las conexiones entre los cables y puertas lógicas como un grafo
 dirigido, donde los cables son los nodos y las puertas lógicas son las aristas.
 
 Reflexión sobre lo aprendido
+
 Este ejercicio ha sido muy útil para entender cómo las tablas hash pueden ser utilizadas en problemas 
 complejos de simulación, especialmente cuando se tienen múltiples dependencias y resultados intermedios.
 Además, nos ha permitido reforzar el uso de recursión, de las tablas hash y de leer información de
