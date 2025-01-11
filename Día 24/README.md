@@ -9,25 +9,22 @@ evitando el recalculo de valores ya computados, lo que mejora considerablemente 
 
 Explicación de la solución al problema
 1. Leer los valores iniciales desde un archivo (input.txt):
-	-Se leen los valores iniciales desde el archivo y se almacenan en una estructura de datos 
-	adecuada, en este caso, una tabla hash. La clave de la tabla es el nombre del cable (como x00, y00,
-	etc.), y el valor es el estado de dicho cable (0 o 1). Esta estructura facilita el acceso rápido a 
-	los resultados sin tener que volver a calcular los valores de los cables ya procesados.
+  - Se leen los valores iniciales desde el archivo y se almacenan en una estructura de datos adecuada, en este caso, una tabla hash. La clave de la tabla es el nombre del cable (como x00, y00, etc.), y el valor es el estado de dicho cable (0 o 1). Esta estructura facilita el acceso rápido a los resultados sin tener que volver a calcular los valores de los cables ya procesados.
 2. Definir las puertas lógicas:
-  -El sistema se basa en operaciones booleanas (AND, OR, XOR), cada una de las cuales depende de los 
+  - El sistema se basa en operaciones booleanas (AND, OR, XOR), cada una de las cuales depende de los 
   valores de los cables de entrada. Las puertas lógicas tienen dos entradas y una salida. La salida se 
   escribe en un cable de salida y su valor depende de la operación lógica aplicada a las entradas. Las 
   instrucciones de estas operaciones se encuentran en el archivo, por ejemplo: x01 OR y00 -> z00.
 3. Evaluar las operaciones lógicas:
-  -Tras leer los valores iniciales, se comienza a realizar las operaciones lógicas. Si ambas entradas 
+  - Tras leer los valores iniciales, se comienza a realizar las operaciones lógicas. Si ambas entradas 
   de una puerta lógica ya tienen un valor calculado (es decir, están presentes en la tabla hash), se 
   puede realizar la operación y obtener el valor de salida. Si alguna entrada aún no tiene valor, el 
   cálculo se aplaza y se resuelve de forma recursiva.
 4. Almacenar los resultados en la tabla hash:
-  -Cada vez que se calcula una salida, se guarda en la tabla hash bajo la clave correspondiente al 
+  - Cada vez que se calcula una salida, se guarda en la tabla hash bajo la clave correspondiente al 
   cable de salida, con el valor recién calculado, para poder usarlo más tarde si es necesario.
 5. Calcular hasta obtener todos los resultados:
-  -El proceso continúa evaluando todas las puertas lógicas hasta que se hayan calculado todos los 
+  - El proceso continúa evaluando todas las puertas lógicas hasta que se hayan calculado todos los 
   valores necesarios para las salidas.
 6. Obtener el valor final:
   - Cuando todos los valores de los cables han sido calculados, se genera un número binario concatenando
