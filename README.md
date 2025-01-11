@@ -2,11 +2,11 @@
 Luna Firpo, María Rodríguez, Nerea Valero 
 
 *Técnicas y estructuras de datos empleadas:*
-1) DyV: 1, ¿¿13??
-2) PD: 19, 23
+1) DyV: 1 (x), ¿¿13??
+2) PD: 19(x), 23
 3) Tablas Hash: 5, 24
 4) Árboles: 7
-5) Grafos: 5, 10, 12, 23
+5) Grafos: 5, 10 (x), 12, 23
 
 *Puntos que se piden de cada problema:*
 1) Justificación de porqué se han elegido los problemas
