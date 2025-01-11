@@ -1,5 +1,5 @@
 # Girlstmass
-Luna Firpo Gómez, María Rodríguez Hernández, Nerea Valero Alegre
+Luna Firpo, María Rodríguez, Nerea Valero 
 
 *Técnicas y estructuras de datos empleadas:*
 1) DyV: 1, ¿¿13??
