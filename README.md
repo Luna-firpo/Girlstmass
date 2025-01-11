@@ -3,11 +3,10 @@
 *Técnicas y estructuras de datos empleadas:*
 1) DyV: 1
 2) PD: 19, 23
-3) Tablas Hash: 5?
+3) Tablas Hash: 24, 5?
 4) Árboles: 7
 5) Grafos: 5, 10, 12, 23
-6) ¿Recursividad?: 12
-   
+
 *Puntos que se piden de cada problema:*
 1) Justificación de porqué se han elegido los problemas
 2) Explicación de cómo se ha resuelto el problema
